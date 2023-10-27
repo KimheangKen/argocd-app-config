@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: kimheang68/react-jenkin:21
+        image: kimheang68/react-jenkin:22
         ports:
         - containerPort: 80
       
