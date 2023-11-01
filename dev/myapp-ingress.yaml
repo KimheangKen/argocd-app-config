@@ -6,7 +6,7 @@ metadata:
     app: myapp
 spec:
   rules:
-    - host: web5.kbaenak.tech
+    - host: web-hw.kbaenak.tech
       http:
         paths:
           - path: /
