@@ -5,8 +5,8 @@ metadata:
   namespace: myapp
 spec:
   dnsNames:
-    - myapp.kbaenak.tech
-  secretName: tls-cert
+    - hw-app.kbaenak.tech
+  secretName: myapp-tls
   issuerRef:
-    name: letsencrypt-cluster-issuer
+    name: letsencrypt-staging
     kind: ClusterIssuer
