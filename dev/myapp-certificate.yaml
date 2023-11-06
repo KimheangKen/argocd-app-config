@@ -8,5 +8,5 @@ spec:
     - hw-app.kbaenak.tech
   secretName: myapp-tls
   issuerRef:
-    name: letsencrypt-staging
+    name: letsencrypt-prod
     kind: ClusterIssuer
