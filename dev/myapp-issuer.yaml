@@ -8,7 +8,7 @@ spec:
     server: https://acme-v02.api.letsencrypt.org/directory
     email: kimheangken68@gmail.com
     privateKeySecretRef:
-      name: letsencrypt-cluster-issuer-key
+      name: letsencrypt-cluster-issuer-key-myapp
     solvers:
     - http01:
        ingress:
