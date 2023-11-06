@@ -1,0 +1,27 @@
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myapp-ingress
+  namespace: myapp
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    certmanager.k8s.io/issuer: "letsencrypt-cluster-issuer"
+    certmanager.k8s.io/acme-challenge-type: http01
+spec:
+  tls:
+  - hosts:
+    - myapp.kbaenak.tech
+    secretName: tls-cert
+  rules:
+  - host: myapp.kbaenak.tech
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: myapp-service
+            port:
+              number: 80
+
