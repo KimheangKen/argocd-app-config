@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - hw-app.kbaenak.tech
+    - web5.kbaenak.tech
     secretName: app-tls
   rules:
-    - host: hw-app.kbaenak.tech
+    - host: web5.kbaenak.tech
       http:
         paths:
           - pathType: Prefix
