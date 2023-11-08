@@ -8,5 +8,5 @@ spec:
     - myapp.kbaenak.tech
   secretName: app-tls
   issuerRef:
-    name: letsencrypt-prod-fintrack
+    name: letsencrypt-prod-myapp
     kind: ClusterIssuer
