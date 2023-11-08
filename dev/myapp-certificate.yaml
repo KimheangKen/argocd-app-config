@@ -6,7 +6,7 @@ metadata:
 spec:
   dnsNames:
     - hw-app.kbaenak.tech
-  secretName: myapp-tls
+  secretName: app-tls
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer

@@ -9,7 +9,7 @@ spec:
   tls:
   - hosts:
     - hw-app.kbaenak.tech
-    secretName: myapp-tls
+    secretName: app-tls
   rules:
     - host: hw-app.kbaenak.tech
       http:
