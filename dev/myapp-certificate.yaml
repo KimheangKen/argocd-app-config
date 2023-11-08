@@ -5,7 +5,7 @@ metadata:
   namespace: myapp
 spec:
   dnsNames:
-    - hw-app.kbaenak.tech
+    - web5.kbaenak.tech
   secretName: myapp-tls
   issuerRef:
     name: letsencrypt-prod
