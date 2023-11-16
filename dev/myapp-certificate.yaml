@@ -8,5 +8,5 @@ spec:
     - web5.kbaenak.tech
   secretName: myapp-tls
   issuerRef:
-    name: letsencrypt-prod
+    name: letsencrypt-prod-myapp
     kind: ClusterIssuer
